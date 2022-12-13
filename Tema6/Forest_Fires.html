@@ -1,0 +1,194 @@
+
+<html>
+<head>
+<style>
+
+    h2 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    table { 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 90%;
+    }
+    table tbody tr:hover {
+        background-color: #dddddd;
+    }
+    .wide {
+        width: 90%; 
+    }
+
+</style>
+</head>
+<body>
+    <h2> Forest Fires </h2>
+<style type="text/css">
+#T_13525_row0_col4, #T_13525_row0_col5, #T_13525_row0_col6, #T_13525_row0_col7, #T_13525_row1_col4, #T_13525_row1_col5, #T_13525_row1_col6, #T_13525_row1_col7, #T_13525_row3_col2, #T_13525_row3_col3, #T_13525_row4_col8, #T_13525_row5_col9 {
+  background: red;
+}
+#T_13525_row1_col9, #T_13525_row4_col4, #T_13525_row5_col5, #T_13525_row5_col6, #T_13525_row5_col7, #T_13525_row7_col8, #T_13525_row8_col2, #T_13525_row8_col3 {
+  background: green;
+}
+</style>
+<table id="T_13525">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_13525_level0_col0" class="col_heading level0 col0" >Model</th>
+      <th id="T_13525_level0_col1" class="col_heading level0 col1" >Search_strategy</th>
+      <th id="T_13525_level0_col2" class="col_heading level0 col2" >test_mean_absolute_error</th>
+      <th id="T_13525_level0_col3" class="col_heading level0 col3" >test_mean_squared_error</th>
+      <th id="T_13525_level0_col4" class="col_heading level0 col4" >test_median_absolute_error</th>
+      <th id="T_13525_level0_col5" class="col_heading level0 col5" >train_mean_absolute_error</th>
+      <th id="T_13525_level0_col6" class="col_heading level0 col6" >train_mean_squared_error</th>
+      <th id="T_13525_level0_col7" class="col_heading level0 col7" >train_median_absolute_error</th>
+      <th id="T_13525_level0_col8" class="col_heading level0 col8" >fit_time</th>
+      <th id="T_13525_level0_col9" class="col_heading level0 col9" >score_time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_13525_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_13525_row0_col0" class="data row0 col0" >PassiveAggressiveRegressor</td>
+      <td id="T_13525_row0_col1" class="data row0 col1" >GridSearchCV</td>
+      <td id="T_13525_row0_col2" class="data row0 col2" >21.289600</td>
+      <td id="T_13525_row0_col3" class="data row0 col3" >4385.110802</td>
+      <td id="T_13525_row0_col4" class="data row0 col4" >14.696061</td>
+      <td id="T_13525_row0_col5" class="data row0 col5" >22.135763</td>
+      <td id="T_13525_row0_col6" class="data row0 col6" >4594.958727</td>
+      <td id="T_13525_row0_col7" class="data row0 col7" >13.633892</td>
+      <td id="T_13525_row0_col8" class="data row0 col8" >0.108801</td>
+      <td id="T_13525_row0_col9" class="data row0 col9" >0.001200</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_13525_row1_col0" class="data row1 col0" >PassiveAggressiveRegressor</td>
+      <td id="T_13525_row1_col1" class="data row1 col1" >RandomizedSearchCV</td>
+      <td id="T_13525_row1_col2" class="data row1 col2" >21.289600</td>
+      <td id="T_13525_row1_col3" class="data row1 col3" >4385.110802</td>
+      <td id="T_13525_row1_col4" class="data row1 col4" >14.696061</td>
+      <td id="T_13525_row1_col5" class="data row1 col5" >22.135763</td>
+      <td id="T_13525_row1_col6" class="data row1 col6" >4594.958727</td>
+      <td id="T_13525_row1_col7" class="data row1 col7" >13.633892</td>
+      <td id="T_13525_row1_col8" class="data row1 col8" >0.022599</td>
+      <td id="T_13525_row1_col9" class="data row1 col9" >0.000999</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_13525_row2_col0" class="data row2 col0" >KNeighborsRegressor</td>
+      <td id="T_13525_row2_col1" class="data row2 col1" >GridSearchCV</td>
+      <td id="T_13525_row2_col2" class="data row2 col2" >23.576418</td>
+      <td id="T_13525_row2_col3" class="data row2 col3" >4858.889659</td>
+      <td id="T_13525_row2_col4" class="data row2 col4" >9.662625</td>
+      <td id="T_13525_row2_col5" class="data row2 col5" >16.729832</td>
+      <td id="T_13525_row2_col6" class="data row2 col6" >3349.292541</td>
+      <td id="T_13525_row2_col7" class="data row2 col7" >5.522194</td>
+      <td id="T_13525_row2_col8" class="data row2 col8" >0.180199</td>
+      <td id="T_13525_row2_col9" class="data row2 col9" >0.002398</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_13525_row3_col0" class="data row3 col0" >KNeighborsRegressor</td>
+      <td id="T_13525_row3_col1" class="data row3 col1" >RandomizedSearchCV</td>
+      <td id="T_13525_row3_col2" class="data row3 col2" >25.559902</td>
+      <td id="T_13525_row3_col3" class="data row3 col3" >7322.153246</td>
+      <td id="T_13525_row3_col4" class="data row3 col4" >7.026150</td>
+      <td id="T_13525_row3_col5" class="data row3 col5" >12.389979</td>
+      <td id="T_13525_row3_col6" class="data row3 col6" >2369.475388</td>
+      <td id="T_13525_row3_col7" class="data row3 col7" >3.777017</td>
+      <td id="T_13525_row3_col8" class="data row3 col8" >0.036188</td>
+      <td id="T_13525_row3_col9" class="data row3 col9" >0.002599</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_13525_row4_col0" class="data row4 col0" >DecisionTreeRegressor</td>
+      <td id="T_13525_row4_col1" class="data row4 col1" >GridSearchCV</td>
+      <td id="T_13525_row4_col2" class="data row4 col2" >24.005985</td>
+      <td id="T_13525_row4_col3" class="data row4 col3" >5503.388623</td>
+      <td id="T_13525_row4_col4" class="data row4 col4" >3.933958</td>
+      <td id="T_13525_row4_col5" class="data row4 col5" >2.207138</td>
+      <td id="T_13525_row4_col6" class="data row4 col6" >10.737368</td>
+      <td id="T_13525_row4_col7" class="data row4 col7" >1.511730</td>
+      <td id="T_13525_row4_col8" class="data row4 col8" >0.208209</td>
+      <td id="T_13525_row4_col9" class="data row4 col9" >0.001200</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_13525_row5_col0" class="data row5 col0" >DecisionTreeRegressor</td>
+      <td id="T_13525_row5_col1" class="data row5 col1" >RandomizedSearchCV</td>
+      <td id="T_13525_row5_col2" class="data row5 col2" >24.091739</td>
+      <td id="T_13525_row5_col3" class="data row5 col3" >5497.395404</td>
+      <td id="T_13525_row5_col4" class="data row5 col4" >4.023988</td>
+      <td id="T_13525_row5_col5" class="data row5 col5" >1.831521</td>
+      <td id="T_13525_row5_col6" class="data row5 col6" >7.819531</td>
+      <td id="T_13525_row5_col7" class="data row5 col7" >1.291674</td>
+      <td id="T_13525_row5_col8" class="data row5 col8" >0.052600</td>
+      <td id="T_13525_row5_col9" class="data row5 col9" >0.008400</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_13525_row6_col0" class="data row6 col0" >Ridge</td>
+      <td id="T_13525_row6_col1" class="data row6 col1" >GridSearchCV</td>
+      <td id="T_13525_row6_col2" class="data row6 col2" >21.354168</td>
+      <td id="T_13525_row6_col3" class="data row6 col3" >4180.723584</td>
+      <td id="T_13525_row6_col4" class="data row6 col4" >13.663484</td>
+      <td id="T_13525_row6_col5" class="data row6 col5" >19.370184</td>
+      <td id="T_13525_row6_col6" class="data row6 col6" >3926.596385</td>
+      <td id="T_13525_row6_col7" class="data row6 col7" >11.669690</td>
+      <td id="T_13525_row6_col8" class="data row6 col8" >0.101387</td>
+      <td id="T_13525_row6_col9" class="data row6 col9" >0.002000</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_13525_row7_col0" class="data row7 col0" >Ridge</td>
+      <td id="T_13525_row7_col1" class="data row7 col1" >RandomizedSearchCV</td>
+      <td id="T_13525_row7_col2" class="data row7 col2" >21.438016</td>
+      <td id="T_13525_row7_col3" class="data row7 col3" >4188.143670</td>
+      <td id="T_13525_row7_col4" class="data row7 col4" >13.675736</td>
+      <td id="T_13525_row7_col5" class="data row7 col5" >19.370055</td>
+      <td id="T_13525_row7_col6" class="data row7 col6" >3926.581126</td>
+      <td id="T_13525_row7_col7" class="data row7 col7" >11.673656</td>
+      <td id="T_13525_row7_col8" class="data row7 col8" >0.017196</td>
+      <td id="T_13525_row7_col9" class="data row7 col9" >0.001212</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_13525_row8_col0" class="data row8 col0" >Lasso</td>
+      <td id="T_13525_row8_col1" class="data row8 col1" >GridSearchCV</td>
+      <td id="T_13525_row8_col2" class="data row8 col2" >19.609140</td>
+      <td id="T_13525_row8_col3" class="data row8 col3" >4125.370542</td>
+      <td id="T_13525_row8_col4" class="data row8 col4" >12.744438</td>
+      <td id="T_13525_row8_col5" class="data row8 col5" >18.505239</td>
+      <td id="T_13525_row8_col6" class="data row8 col6" >4016.226325</td>
+      <td id="T_13525_row8_col7" class="data row8 col7" >12.149923</td>
+      <td id="T_13525_row8_col8" class="data row8 col8" >0.102815</td>
+      <td id="T_13525_row8_col9" class="data row8 col9" >0.001199</td>
+    </tr>
+    <tr>
+      <th id="T_13525_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_13525_row9_col0" class="data row9 col0" >Lasso</td>
+      <td id="T_13525_row9_col1" class="data row9 col1" >RandomizedSearchCV</td>
+      <td id="T_13525_row9_col2" class="data row9 col2" >19.873732</td>
+      <td id="T_13525_row9_col3" class="data row9 col3" >4138.554649</td>
+      <td id="T_13525_row9_col4" class="data row9 col4" >12.292168</td>
+      <td id="T_13525_row9_col5" class="data row9 col5" >18.496333</td>
+      <td id="T_13525_row9_col6" class="data row9 col6" >4005.627208</td>
+      <td id="T_13525_row9_col7" class="data row9 col7" >12.226885</td>
+      <td id="T_13525_row9_col8" class="data row9 col8" >0.018200</td>
+      <td id="T_13525_row9_col9" class="data row9 col9" >0.001000</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
